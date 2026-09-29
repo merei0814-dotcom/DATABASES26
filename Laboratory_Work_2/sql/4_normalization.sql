@@ -81,6 +81,7 @@ flight_id INT PRIMARY KEY,
 flight_number VARCHAR(20) NOT NULL,
 departure_airport_id INT NOT NULL,
 arrival_airport_id INT NOT NULL,
+
 airline_id INT NOT NULL,
 FOREIGN KEY (departure_airport_id) REFERENCES Airport_3NF(airport_id),
 FOREIGN KEY (arrival_airport_id) REFERENCES Airport_3NF(airport_id),
