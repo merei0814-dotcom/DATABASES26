@@ -74,3 +74,7 @@ SELECT *
 FROM baggage_check
 WHERE DATE_TRUNC('month', updated_at) = DATE_TRUNC('month', created_at)
   AND updated_at < created_at;
+
+
+ 
+
